@@ -78,7 +78,7 @@ async def run_jobs(request: CalcRequest):
     # print(result)
     print(json.dumps(result))
     print(f"Elapsed: {time.time() - start_at:.2f} sec")
-    return result['answer']
+    return result
 
 if __name__ == "__main__":
 
