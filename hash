@@ -54,7 +54,7 @@ async def run_jobs(request: CalcRequest):
     num_job_params = request.num_job_params
     jobs = request.jobs
     timeout = request.timeout
-    print(f"gpu_count: {gpu_count}, num_job_params: {num_job_params}, timeout: {timeout}")
+    print(f"gpu_count: {gpu_count}, num_job_params: {num_job_params}, timeout: {timeout}", flush=True)
     tasks = [
         asyncio.to_thread(
             run_hashcat,
